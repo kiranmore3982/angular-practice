@@ -6,11 +6,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApinutriComponent } from './apinutri/apinutri.component';
+import { ApipostComponent } from './apipost/apipost.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApinutriComponent
+    ApinutriComponent,
+    ApipostComponent
   ],
   imports: [
     BrowserModule,

@@ -20,4 +20,14 @@ export class ApitestService {
 
     return this.http.get('https://edamam-food-and-grocery-database.p.rapidapi.com/parser',{headers:headers,params:paramsarr});
   }
+
+  public checkpost()
+  {
+    let movies =['Bajrangi Bhaijan','Tanhaji'];
+    let paramsarr1 = new HttpParams();
+    paramsarr1 = paramsarr1.append('name', 'Kiran');
+    paramsarr1 = paramsarr1.append('movies', movies.join(', '));
+    
+    return this.http.post('https://reqres.in/api/users',{params:paramsarr1});
+  }
 }

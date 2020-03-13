@@ -27,4 +27,6 @@ export class ApinutriComponent implements OnInit {
 
     );
   }
+
+  
 }
